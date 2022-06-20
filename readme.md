@@ -9,6 +9,9 @@ In practice there are only 3 little Steps
 1. add a few lines in your .htaccess file (so obviously it only works with Apache servers. If your server runs Nginx, give a try to https://winginx.com/en/htaccess)
 2. add a first Regular Labs ReReplacer rule to adapt the <head> section of your page
 3. add a second Regular Labs ReReplacer rule to adapt the <body> section of your page
+   
+Steps 2 and 3 make sure that all internal links within Joomla are correct.
+But this does not prevent that a human being or a robot reaches a "wrong" combination of domain name and language tag. In that case, Joomla would simply display the page but obviously we want to force the right domain name (ao to avoid Duplicate Content).
 
 Note: in Joomla 3 there were a couple of plugins allowing to do that: 
 - 'Language2Domain' https://github.com/pe7er/plg_system_language2domain by Peter Martin (based on 'Language Domains' https://github.com/yireo-joomla/plg_system_languagedomains by Jisse Reitsma aka Yireo)
