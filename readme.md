@@ -3,17 +3,18 @@
 Suppose you have a multilingual Joomla 4 website with a different domain name for each language.
 Here is a nice and easy solution to implement that.
 
-Indeed in Joomla 3 there were a couple of plugins allowing to do that: 
-- 'Language Domain' https://github.com/pe7er/plg_system_language2domain by Peter Martin (based on https://github.com/yireo-joomla/plg_system_languagedomains by Jisse Reitsma aka Yireo)
-- 'GJ Multilanguages Domains' which is not available anymore on the Joomla Extensions Directory any more
-
 But atm and afaik there is no solution for Joomla 4
 
-There are 3 Steps
+In practice there are only 3 little Steps
 1. add a few lines in your .htaccess file (so obviously it only works with Apache servers. If your server runs Nginx, give a try to https://winginx.com/en/htaccess)
 2. add a first Regular Labs ReReplacer rule to adapt the <head> section of your page
 3. add a second Regular Labs ReReplacer rule to adapt the <body> section of your page
 
+Note: in Joomla 3 there were a couple of plugins allowing to do that: 
+- 'Language2Domain' https://github.com/pe7er/plg_system_language2domain by Peter Martin (based on 'Language Domains' https://github.com/yireo-joomla/plg_system_languagedomains by Jisse Reitsma aka Yireo)
+- 'GJ Multilanguages Domains' which is not available anymore on the Joomla Extensions Directory any more
+The first one would take care of the equivalent of the 3 above-mentioned steps but not the latter (so steps 2 and steps 3 were also necessary)
+   
 # Our example
 
 Let's take a real life example, where 3 domain names of the same site are respectively:
