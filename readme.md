@@ -60,17 +60,17 @@ RewriteRule ^ https://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 # switch domain name to English if language tag is en
 RewriteCond %{HTTP_HOST} ^(.*)belgiqueenbonnesante.be$ [OR,NC]
 RewriteCond %{HTTP_HOST} ^(.*)gezondbelgie.be$ [NC]
-RewriteRule ^en(.*)$ https://www.healthybelgium.be/en$1 [R=302,L]
+RewriteRule ^en(.*)$ https://www.healthybelgium.be/en$1 [R=301,L]
 
 # switch domain name to French if language tag is fr
 RewriteCond %{HTTP_HOST} ^(.*)healthybelgium.be$ [OR,NC]
 RewriteCond %{HTTP_HOST} ^(.*)gezondbelgie.be$ [NC]
-RewriteRule ^fr(.*)$ https://www.belgiqueenbonnesante.be/fr$1 [R=302,L]
+RewriteRule ^fr(.*)$ https://www.belgiqueenbonnesante.be/fr$1 [R=301,L]
 
 # switch domain name to Dutch if language tag is nl
 RewriteCond %{HTTP_HOST} ^(.*)healthybelgium.be$ [OR,NC]
 RewriteCond %{HTTP_HOST} ^(.*)belgiqueenbonnesante.be$ [NC]
-RewriteRule ^nl(.*)$ https://www.gezondbelgie.be/nl$1 [R=302,L]
+RewriteRule ^nl(.*)$ https://www.gezondbelgie.be/nl$1 [R=301,L]
 
 </IfModule>
 ```
