@@ -91,6 +91,11 @@ https://www.belgiqueenbonnesante.be/fr/,
 https://www.belgiqueenbonnesante.be/fr/
 ```
 
+Explanation: we have to put the correct domain name in the <head> because all the links are Absolute
+- for all the links to the Associated pages like `<link href="https://www.healthybelgium.be/en/" rel="alternate" hreflang="en-GB" />`. Example: for each language
+   - change `https://www.belgiqueenbonnesante.be/en/`
+   - into   `https://www.healthybelgium.be/en/`
+
 # Step 3
 
 In Regular Labs ReReplacer, create a new rule, limit the Search Areas to the Body and replace
@@ -105,3 +110,9 @@ by
 <a href="https://www.belgiqueenbonnesante.be/fr/,
 <a href="https://www.healthybelgium.be/en/
 ```
+
+Explanation: we have to put the correct domain name in the <body> because all links are Relative
+- for all the links in the Language Switcher. Example: for each language
+  - change `<a href="/en/`
+  - into   `<a href="https://www.healthybelgium.be/en/`
+- and elsewhere in the content (there could be direct links to Articles or Menu items from another language)
