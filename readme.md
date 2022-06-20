@@ -11,8 +11,11 @@ In practice there are only 3 little Steps
 3. add a second Regular Labs ReReplacer rule to adapt the <body> section of your page
    
 Steps 2 and 3 make sure that all links within Joomla are correct.
+
 But this does not prevent a human being or a robot to reach manually a "wrong" combination of domain name and language tag.
+
 In that case, Joomla would simply display the page... but obviously we want to force the right domain name (ao to avoid Duplicate Content).
+
 That is what Step 1 does.
 
 Note: in Joomla 3 there were a couple of plugins allowing to do that: 
