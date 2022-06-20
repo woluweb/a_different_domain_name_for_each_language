@@ -19,7 +19,7 @@ There are 3 Steps
 Let's take a real life example, where 3 domain names of the same site are respectively:
 - EN: healthybelgium.be
 - FR: belgiqueenbonnesante.be
-- NL: gezondbelgie
+- NL: gezondbelgie.be
 
 # Step 1
 
