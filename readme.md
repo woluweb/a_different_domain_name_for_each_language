@@ -5,7 +5,7 @@ Suppose you have a multilingual Joomla website with a different domain name for 
 Here is a nice and easy solution to implement that.
 
 There are 3 Steps
-1. add a few lines in your .htaccess file
+1. add a few lines in your .htaccess file (so obviously it only works with Apache servers. If your server runs Nginx, give a try to https://winginx.com/en/htaccess)
 2. add a first Regular Labs ReReplacer rule to adapt the <head> section of your page
 3. add a second Regular Labs ReReplacer rule to adapt the <body> section of your page
 
