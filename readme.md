@@ -33,8 +33,9 @@ In our `System - Language Filter` plugin
 ### Alternative solutions for Joomla 3
 
 In Joomla 3 there were a couple of plugins allowing to do that: 
-- 'Language2Domain' https://github.com/pe7er/plg_system_language2domain by Peter Martin
-   - it is based on 'Language Domains' https://github.com/yireo-joomla/plg_system_languagedomains by Jisse Reitsma aka Yireo
+- 'Language2Domain'
+   - available on https://github.com/pe7er/plg_system_language2domain
+   - it is made by [Peter Martin](https://github.com/pe7er) and based on 'Language Domains' https://github.com/yireo-joomla/plg_system_languagedomains by Jisse Reitsma aka [Yireo](https://github.com/yireo-joomla)
    - IIRC it takes care of everything, namely the equivalent of the 3 above-mentioned steps
    - by default it removes the language tag after the domain name
    - `System - Language filter` must be *disabled*
