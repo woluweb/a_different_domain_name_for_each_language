@@ -123,7 +123,7 @@ Explanation: we have to put the correct domain name in the `<head>` because all 
    - change `https://www.belgiqueenbonnesante.be/en/`
    - into   `https://www.healthybelgium.be/en/`
 
-### Step 3 - - fixing the domain name in the `<body>`
+### Step 3 - fixing the domain name in the `<body>`
 
 In Regular Labs ReReplacer, create a new rule, limit the Search Areas to the Body and replace
 ```
