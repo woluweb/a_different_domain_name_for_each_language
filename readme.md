@@ -50,9 +50,14 @@ In Joomla 3 there were a couple of plugins allowing to do that:
 # - RewriteCond applies only to the RewriteRule that immediately follows 
 # - [NC] makes the test case-insensitive
 # - [OR] combines rule conditions with a local OR instead of the implicit AND
-# - 301 means that a new page has taken over permanently and 302 redirect means that the page has been moved temporarily
+# - 301 means that a new page has taken over permanently and 302 redirect means that the page has been moved temporarily.
+#   If this is intended to be permanent then change the 302 (temporary) redirect to 301 (permanent) only once you have confirmed that everything works as intended, so as to avoid potential caching issues.
 # - L stands for last
-
+# - in Regex `^blabla(.*)$` means that what you search
+#   - is between `^` and `$`
+#   - and so is `blabla(.*)` where `(.*)` means literally *any chain of characters*
+#   With other words, `^blabla(.*)$` simply means that you search for *something starting with `blabla` followed by anything else*
+   
 <IfModule mod_rewrite.c>
 
 RewriteEngine On
