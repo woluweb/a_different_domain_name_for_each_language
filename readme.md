@@ -55,7 +55,7 @@ In Joomla 3 there were a couple of plugins allowing to do that:
 # - L stands for last
 # - in Regex `^blabla(.*)$` means that what you search
 #   - is between `^` and `$`
-#   - and so is `blabla(.*)` where `(.*)` means literally *any chain of characters*
+#   - and is therefore `blabla(.*)` where `(.*)` means literally *any chain of characters*
 #   With other words, `^blabla(.*)$` simply means that you search for *something starting with `blabla` followed by anything else*
    
 <IfModule mod_rewrite.c>
