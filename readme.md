@@ -36,10 +36,12 @@ In Joomla 3 there were a couple of plugins allowing to do that:
 - 'Language2Domain' https://github.com/pe7er/plg_system_language2domain by Peter Martin
    - it is based on 'Language Domains' https://github.com/yireo-joomla/plg_system_languagedomains by Jisse Reitsma aka Yireo
    - IIRC it takes care of everything, namely the equivalent of the 3 above-mentioned steps
+   - by default it removes the language tag after the domain name
    - a Joomla 4 version should be released one day but not in the short term
 - 'GJ Multilanguages Domains'
    - it is not available anymore on the Joomla Extensions Directory
    - IIRC it was only taking care of step 1 (so if you use it on some site you should definitely reproduce the steps 2 & 3 described here if you don't want to hurt your SEO)
+   - it does not remove the language tag after the domain name
 
 ## The 3 steps in detail
 
