@@ -2,13 +2,13 @@
 
 ## Introduction
 
-Suppose you have a multilingual Joomla 4 website with a different domain name for each language.
+Suppose you have a multilingual **Joomla 4** website with a different domain name for each language.
 
-Here is a nice and easy solution to implement that. It works also with Joomla 3.
+Here is a nice and easy solution to implement that. It works also with **Joomla 3**.
 
 Indeed atm and afaik there is no solution for Joomla 4:
-- there is no 3rd party plugin (yet). See below
-- multisites and/or multidomains were mentioned at some point as potential features for Joomla 4.2, but in the meantime nothing has happened so
+- on the Joomla Extensions Directory or on github: there is no 3rd party plugin (yet). See below
+- in the core: multisites and/or multidomains were mentioned at some point as potential features for Joomla 4.2, but in the meantime nothing has happened so
   - it is definitely not for J4.2 (release date: 2022.08.16, ie exactly one year after J4.0)
   - there is even no news about when this could happen
 
