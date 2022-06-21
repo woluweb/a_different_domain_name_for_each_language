@@ -1,4 +1,6 @@
-# Introduction
+# How to set up a multilingual Joomla 4 website with a different domain name for each language
+
+## Introduction
 
 Suppose you have a multilingual Joomla 4 website with a different domain name for each language.
 Here is a nice and easy solution to implement that.
@@ -10,27 +12,37 @@ In practice there are only 3 little Steps
 2. add a first Regular Labs ReReplacer rule to adapt the <head> section of your page
 3. add a second Regular Labs ReReplacer rule to adapt the <body> section of your page
    
-Steps 2 and 3 make sure that all links within Joomla are correct.
+Steps 2 and 3 make sure that all links within Joomla are correct. But this does not prevent a human being or a robot to reach manually a "wrong" combination of domain name and language tag.
 
-But this does not prevent a human being or a robot to reach manually a "wrong" combination of domain name and language tag.
+In that case, Joomla would simply display the page keeping the "wrong" domain name... but obviously we want to force the right domain name (ao to avoid Duplicate Content). That is what Step 1 does.
 
-In that case, Joomla would simply display the page... but obviously we want to force the right domain name (ao to avoid Duplicate Content).
+### Alternative solutions for Joomla 3
 
-That is what Step 1 does.
-
-Note: in Joomla 3 there were a couple of plugins allowing to do that: 
-- 'Language2Domain' https://github.com/pe7er/plg_system_language2domain by Peter Martin (based on 'Language Domains' https://github.com/yireo-joomla/plg_system_languagedomains by Jisse Reitsma aka Yireo)
-- 'GJ Multilanguages Domains' which is not available anymore on the Joomla Extensions Directory any more
-The first one would take care of the equivalent of the 3 above-mentioned steps but not the latter (so steps 2 and steps 3 were also necessary)
+In Joomla 3 there were a couple of plugins allowing to do that: 
+- 'Language2Domain' https://github.com/pe7er/plg_system_language2domain by Peter Martin
+   - it is based on 'Language Domains' https://github.com/yireo-joomla/plg_system_languagedomains by Jisse Reitsma aka Yireo
+   - IIRC it takes care of everything, namely the equivalent of the 3 above-mentioned steps
+   - a Joomla 4 version should be released one day but not in the short term
+- 'GJ Multilanguages Domains'
+   - it is not available anymore on the Joomla Extensions Directory
+   - IIRC it was only taking care of step 1 (so if you use it on some site you should definitely reproduce the steps 2 & 3 described here if you don't want to hurt your SEO)
    
-# Our example
+### Our example
 
 Let's take a real life example, where 3 domain names of the same site are respectively:
 - EN: healthybelgium.be
 - FR: belgiqueenbonnesante.be
 - NL: gezondbelgie.be
 
-# Step 1
+In our `System - Language Filter` plugin, the Option `Remove URL Language Code` for the default language is set to No.
+With other words, what we want to get as url for the Homepage in each language is the following:
+- EN: healthybelgium.be/en
+- FR: belgiqueenbonnesante.be/fr
+- NL: gezondbelgie.be/nl
+
+# The 3 steps in detail
+
+## Step 1 - forcing the correct domain name in .htaccess
 
 ```
 # REMINDER
@@ -84,7 +96,7 @@ RewriteRule ^nl(.*)$ https://www.gezondbelgie.be/nl$1 [R=301,L]
 </IfModule>
 ```
 
-# Step 2
+## Step 2 - fixing the domain name in the `<head>`
 
 In Regular Labs ReReplacer, create a new rule, limit the Search Areas to the Head and replace
 ```
@@ -110,7 +122,7 @@ Explanation: we have to put the correct domain name in the `<head>` because all 
    - change `https://www.belgiqueenbonnesante.be/en/`
    - into   `https://www.healthybelgium.be/en/`
 
-# Step 3
+## Step 3 - - fixing the domain name in the `<body>`
 
 In Regular Labs ReReplacer, create a new rule, limit the Search Areas to the Body and replace
 ```
