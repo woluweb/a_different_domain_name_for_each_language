@@ -3,11 +3,16 @@
 ## Introduction
 
 Suppose you have a multilingual Joomla 4 website with a different domain name for each language.
-Here is a nice and easy solution to implement that.
 
-But atm and afaik there is no solution for Joomla 4
+Here is a nice and easy solution to implement that. It works also with Joomla 3.
 
-In practice there are only 3 little Steps
+Indeed atm and afaik there is no solution for Joomla 4:
+- there is no 3rd party plugin (yet). See below
+- multisites and/or multidomains were mentioned at some point as potential features for Joomla 4.2, but in the meantime nothing has happened so
+  - it is definitely not for J4.2 (release date: 2022.08.16, ie exactly one year after J4.0)
+  - there is even no news about when this could happen
+
+In practice there are only 3 little Steps:
 1. add a few lines in your .htaccess file (so obviously it only works with Apache servers. If your server runs Nginx, [give a try to this tool to convert the rules](https://winginx.com/en/htaccess))
 2. add a first Regular Labs ReReplacer rule to adapt the <head> section of your page
 3. add a second Regular Labs ReReplacer rule to adapt the <body> section of your page
