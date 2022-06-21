@@ -99,7 +99,7 @@ RewriteRule ^nl(.*)$ https://www.gezondbelgie.be/nl$1 [R=301,L]
 
 ### Step 2 - fixing the domain name in the `<head>`
 
-In Regular Labs ReReplacer, create a new rule, limit the Search Areas to the Head and replace
+In [Regular Labs ReReplacer](https://regularlabs.com/rereplacer), create a new rule, limit the Search Areas to the Head and replace
 ```
 https://www.belgiqueenbonnesante.be/nl/,
 https://www.healthybelgium.be/nl/,
@@ -125,7 +125,7 @@ Explanation: we have to put the correct domain name in the `<head>` because all 
 
 ### Step 3 - fixing the domain name in the `<body>`
 
-In Regular Labs ReReplacer, create a new rule, limit the Search Areas to the Body and replace
+In [Regular Labs ReReplacer](https://regularlabs.com/rereplacer), create a new rule, limit the Search Areas to the Body and replace
 ```
 <a href="/nl/,
 <a href="/fr/,
