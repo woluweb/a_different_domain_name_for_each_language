@@ -53,10 +53,10 @@ In Joomla 3 there were a couple of plugins allowing to do that:
 # - 301 means that a new page has taken over permanently and 302 redirect means that the page has been moved temporarily.
 #   If this is intended to be permanent then change the 302 (temporary) redirect to 301 (permanent) only once you have confirmed that everything works as intended, so as to avoid potential caching issues.
 # - L stands for last
-# - in Regex `^blabla(.*)$` means that what you search
-#   - is between `^` and `$`
-#   - and is therefore `blabla(.*)` where `(.*)` means literally *any chain of characters*
-#   With other words, `^blabla(.*)$` simply means that you search for *something starting with `blabla` followed by anything else*
+# - in Regex ^blabla(.*)$ means that what you search
+#   - is between ^ and $
+#   - and is therefore blabla(.*) where (.*) means literally *any chain of characters*
+#   With other words, ^blabla(.*)$ simply means that you search for *something starting with blabla followed by anything else*
    
 <IfModule mod_rewrite.c>
 
