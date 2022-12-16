@@ -14,8 +14,8 @@ Indeed atm and afaik there is no solution for Joomla 4:
 
 In practice there are only 3 little Steps:
 1. add a few lines in your .htaccess file (so obviously it only works with Apache servers. If your server runs Nginx, [give a try to this tool to convert the rules](https://winginx.com/en/htaccess))
-2. add a first Regular Labs ReReplacer rule to adapt the <head> section of your page
-3. add a second Regular Labs ReReplacer rule to adapt the <body> section of your page
+2. add a first Regular Labs ReReplacer rule to adapt the `<head>` section of your page
+3. add a second Regular Labs ReReplacer rule to adapt the `<body>` section of your page
    
 Steps 2 and 3 make sure that all links *within Joomla* are correct (note that they can be combined if you wish [by using some regex](https://github.com/woluweb/a_different_domain_name_for_each_language/issues/1)). But this does not prevent a human being or a robot to reach manually a "wrong" combination of domain name and language tag.
 
