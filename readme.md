@@ -140,21 +140,23 @@ Explanation: we have to put the correct domain name in the `<head>` because all 
 
 ### Step 3 - fixing the domain name in the `<body>`
 
-In [Regular Labs ReReplacer](https://regularlabs.com/rereplacer), create a new rule, limit the Search Areas to the Body and replace
+In [Regular Labs ReReplacer](https://regularlabs.com/rereplacer), create a new rule, limit the Search Areas to the Body and replace ("treat as list")
 ```
-<a href="/nl/,
-<a href="/fr/,
-<a href="/en/
+href="/nl/,
+href="/fr/,
+href="/en/
 ```
 by
 ```
-<a href="https://www.gezondbelgie.be/nl/,
-<a href="https://www.belgiqueenbonnesante.be/fr/,
-<a href="https://www.healthybelgium.be/en/
+href="https://www.gezondbelgie.be/nl/,
+href="https://www.belgiqueenbonnesante.be/fr/,
+href="https://www.healthybelgium.be/en/
 ```
 
 Explanation: we have to put the correct domain name in the `<body>` because all links are Relative
 - for all the links in the Language Switcher. Example: for each language
-  - change `<a href="/en/`
-  - into   `<a href="https://www.healthybelgium.be/en/`
+  - change `href="/en/`
+  - into   `href="https://www.healthybelgium.be/en/`
 - and elsewhere in the content (there could be direct links to Articles or Menu items from another language)
+
+Note: in a previous version of this document we were Searching for `<a href="/fr/"` for example. But recently Joomla has added aria-labels to the Language Switcher. So that string in the code has become `<a aria-label="Français" href="/fr/">`. This is why we have simplified our Search & Replace above by `href="/fr/"`
