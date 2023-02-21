@@ -159,4 +159,4 @@ Explanation: we have to put the correct domain name in the `<body>` because all 
   - into   `href="https://www.healthybelgium.be/en/`
 - and elsewhere in the content (there could be direct links to Articles or Menu items from another language)
 
-Note: in a previous version of this document we were Searching for `<a href="/fr/"` for example. But recently Joomla has added aria-labels to the Language Switcher. So that string in the code has become `<a aria-label="Français" href="/fr/">`. This is why we have simplified our Search & Replace above by `href="/fr/"`
+Note: in a previous version of this document we were Searching for `<a href="/fr/` for example. But recently Joomla has added aria-labels to the Language Switcher. So that string in the code has become `<a aria-label="Français" href="/fr/>`. This is why we have simplified our Search & Replace above by `href="/fr/"`
