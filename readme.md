@@ -51,6 +51,8 @@ In Joomla 3 there were a couple of plugins allowing to do that:
    - it does not remove the language tag after the domain name
    - `System - Language filter` must be *enabled*
 
+[ edit 2023.04.25 ] I discover a new plugin released end of 2022 for Joomla 4 allowing to manage multiple domains. I haven't tested it myself yet, but here is the link: https://extensions.joomla.org/extension/languages/multi-lingual-content/n3t-language-domains/
+
 ## The 3 steps in detail
 
 ### Step 1 - forcing the correct domain name in .htaccess
